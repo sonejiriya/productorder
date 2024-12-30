@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Order Form</title>
+</head>
+
+<body>
+    <section class="product">
+        <div class="product-container">
+            <div class="header">
+                <h1>Product Order Form</h1>
+                <p>Please make sure to fill fields and submit this form to complete your order.</p>
+            </div>
+          <div class="order-container">
+                <div class="heading">
+                   <h5>My Product</h5>
+                </div>
+             <div class="box-container">
+                
+                 <!-- T-shirt -->
+                  <div class="box">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="image">
+                        <div class="icons">
+                            <a class="fa-solid fa-magnifying-glass open-popup" data-modal="#modal-tshirt"></a>
+                        </div>
+                        <img src="image/t-shirt.jpg" alt="T-shirt">
+                    </div>
+                    <div class="modal" id="modal-tshirt">
+                        <span class="modal-close">&times;</span>
+                        <img src="image/t-shirt.jpg" alt="T-shirt">
+                    </div>
+                    <div class="content">
+                        <h3>T-shirt</h3>
+                        <div class="price">$1.00</div>
+                        <div class="option">
+                            <label>Quantity:
+                                <select name="tshirt_quantity" class="select1">
+                                    <option class="op1">1</option>
+                                    <option class="op1">2</option>
+                                    <option class="op1">3</option>
+                                </select>
+                            </label>
+                            <label class="color">Color:
+                                <select name="tshirt_color" class="select2">
+                                    <option class="co1">Green</option>
+                                    <option class="co1">Blue</option>
+                                    <option class="co1">Red</option>
+                                </select>
+                            </label>
+                            
+                        </div>
+                        <div class="option1">
+                            <label class="t-shirt">t-shirt Size:
+                                <select name="tshirt_size" class="select">
+                                    <option>XS</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sweatshirt -->
+                <div class="box">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="image">
+                        <div class="icons">
+                            <a class="fa-solid fa-magnifying-glass open-popup" data-modal="#modal-sweatshirt"></a>
+                        </div>
+                        <img src="image/sweatshirt1.jpg" alt="Sweatshirt">
+                    </div>
+                    <div class="modal" id="modal-sweatshirt">
+                        <span class="modal-close">&times;</span>
+                        <img src="image/sweatshirt1.jpg" alt="Sweatshirt">
+                    </div>
+                    <div class="content">
+                        <h3>Sweatshirt</h3>
+                        <div class="price">$1.00</div>
+                        <div class="option">
+                            <label>Quantity:
+                                <select name="sweatshirt_quantity" class="select1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </label>
+                            <label class="color">Color:
+                                <select name="sweatshirt_color" class="select2">
+                                    <option value="" class="co1">Green</option>
+                                    <option value="" class="co1">Red</option>
+                                    <option value="" class="co1">Blue</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="option1">
+                            <label class="sweatshirt">sweatshirt Size:
+                                <select name="sweatshirt_size" class="select">
+                                    <option>XS</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoes -->
+                <div class="box">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="image">
+                        <div class="icons">
+                            <a class="fa-solid fa-magnifying-glass open-popup" data-modal="#modal-shoes"></a>
+                        </div>
+                        <img src="image\shoss.jpg" alt="Shoes">
+                    </div>
+                    <div class="modal" id="modal-shoes">
+                        <span class="modal-close">&times;</span>
+                        <img src="image\shoss.jpg" alt="Shoes">
+                    </div>
+                    <div class="content">
+                        <h3>Shoes</h3>
+                        <div class="price">$1.00</div>
+                        <div class="option">
+                            <label>Quantity:
+                                <select name="shoes_quantity" class="select1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </label>
+                            <label>shoes Size:
+                                <select name="shoes_size" class="select1">
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <h3>Total: $0.00</h3>
+            </div>
+         </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <div class="col-12">
+                        <div class="row mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">Full Name</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form1" class="form-control order-form-input" required />
+                                    <label class="form-label" for="form1">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-2 mt-sm-0">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form2" class="form-control order-form-input" required/>
+                                    <label class="form-label" for="form2">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">email</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="email" id="form3" class="form-control order-form-input1" placeholder="ex:myname@example.com" required />
+                                    <label class="form-label1" for="form2">example@example.com</label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">Contact Number</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="tel" id="form4" class="form-control order-form-input" placeholder="(000) 000-0000" maskvalue="(###) ###-####" required />
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">billing  Adress</label>
+                            </div>
+                            <div class="col-12">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form5" class="form-control order-form-input" required />
+                                    <label class="form-label" for="form5">Street Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form6" class="form-control order-form-input"  required/>
+                                    <label class="form-label" for="form6">Street Address Line 2</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 pe-sm-2">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form7" class="form-control order-form-input" required/>
+                                    <label class="form-label" for="form7">City</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-2 ps-sm-0">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form8" class="form-control order-form-input" required/>
+                                    <label class="form-label" for="form8">state/province</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-2 pe-sm-2">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="number" id="form9" class="form-control order-form-input" maxlength="6"required/>
+                                    <label class="form-label" for="form9">Postal / Zip Code</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-2 ps-sm-0">
+                                <div data-mdb-input-init class="form-outline">
+                                    <select name="" id="form10" class="form-control order-form-input">
+                                        <option value="Please select ">Please select</option>
+                                        <option value="India">India</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="belgium">belgium</option>
+                                        <option value="brazil">brazil</option>
+                                        <option value="Canada">Canada</option>
+                                    </select>
+                                    <label class="form-label" for="form10">Country</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colume mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">Is shipping address same as billing address?</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="yes" name="address-check" value="yes" onclick="nockeck();">
+                                    <label for="yes" class="form-label2">Yes</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="no" name="address-check" value="no" onclick="nockeck();">
+                                    <label for="no" class="form-label2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3 mx-4" id="ifNo" style="display: none;">
+                            <div class="col-12">
+                                <label class="order-form-label">Shipping Address</label>
+                            </div>
+                            <div class="col-12">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text"  class="form-control order-form-input" required />
+                                    <label class="form-label" for="form5">Street Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form22" class="form-control order-form-input" required />
+                                    <label class="form-label" for="form6">Street Address Line 2</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-6 mt-2 ps-sm-0"">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text"  class="form-control order-form-input" required />
+                                    <label class="form-label" for="form7">City</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2 ps-sm-0">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text"  class="form-control order-form-input" required />
+                                    <label class="form-label" for="form8">State/Province</label>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-12 mt-2">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="number"  class="form-control order-form-input" maxlength="6" required />
+                                    <label class="form-label" for="form9">Postal / Zip Code</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="colume mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">send gift ?</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="form13" name="yes" value="yes" onclick="toggleGiftForm('yes');;">
+                                    <label for="" class="form-label2">Yes</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="form14" name="yes" value="no" onclick="toggleGiftForm('no');">
+                                    <label for="" class="form-label2">No</label>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="row mx-4" id="onyes" style="display: none;">
+                            <div class="col-12">
+                                <label class="order-form-label">Reciptent's Full Name</label>
+                            </div>
+                            <div class="row">
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form1" class="form-control order-form-input" required />
+                                    <label class="form-label" for="form1">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-2 mt-sm-0">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="text" id="form2" class="form-control order-form-input" required/>
+                                    <label class="form-label" for="form2">Last Name</label>
+                                </div>
+                            </div>
+                                <div class="col-12">
+                                    <label class="order-form-label">Gift message </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <textarea name="" id="form12" class="form-control order-form-textarea" rows="5" cols=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">Special Instruction</label>
+                            </div>
+                            <div class="col-12">
+                                <div data-mdb-input-init class="form-outline">
+                                    <textarea name="" id="form12" class="form-control order-form-textarea" rows="5" cols=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="colume mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label">payment methods</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="form11" name="yes" value="yes" onclick="toggleInputFields(true)"">
+                                    <label for="" class="form-label2"><i class="fa-regular fa-credit-card"></i> debit/credit card</label>
+                                </div>
+                            </div>
+                            <div class="row mx-4" id="inputFields" style="display: none;">
+                                <div class="row2">
+                                <div class="col-sm-6">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <input type="text" id="form1" class="form-control order-form-input" placeholder="First Name" required />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mt-2 mt-sm-0">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <input type="text" id="form2" class="form-control order-form-input" placeholder="Last Name" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div data-mdb-input-init class="form-outline">
+                                    <input type="radio" id="form12" name="yes" value="no" onclick="toggleInputFields(false)">
+                                    <img src="image\PG-PP.svg" alt="" style="width: 70px;">
+                                </div>
+                                
+                            </div>
+                            <div id="paypal-sub-area" style="display: none;">
+                                <p class="paypal-smart-text">Please click one of the PayPal option to compleate payment and <b>submit</b> the form.</p>
+                            </div>
+        
+                        </div>
+                        <div class="row1 mt-3">
+                            <div class="col-12">
+                                <button  type="button" data-mdb-button-init id="btnSubmit" data-mdb-ripple-init class="btn btn-primary d-block mx-auto btn-submit">Submit</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for modal functionality
+        document.querySelectorAll('.open-popup').forEach(icon => {
+            icon.addEventListener('click', function () {
+                const modalId = this.getAttribute('data-modal');
+                document.querySelector(modalId).style.display = 'flex';
+            });
+        });
+
+        document.querySelectorAll('.modal-close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function () {
+                this.parentElement.style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+
+        function nockeck()
+        {
+                const ifNoSection = document.getElementById("ifNo");
+                const yesRadio = document.getElementById("yes");
+                const noRadio = document.getElementById("no");
+
+                if (noRadio.checked) {
+                    ifNoSection.style.display = "block";
+                } else if (yesRadio.checked) {
+                    ifNoSection.style.display = "none";
+                }
+        }
+
+        function toggleGiftForm(option) 
+        {
+            const giftForm = document.getElementById('onyes');
+            if (option === 'yes') {
+                giftForm.style.display = 'block';
+            } else {
+                giftForm.style.display = 'none';
+            }
+        }
+
+    function toggleInputFields(isCardSelected)
+    {
+        const inputFields = document.getElementById("inputFields");
+        const paypalSubArea = document.getElementById("paypal-sub-area");
+
+        if (isCardSelected) {
+            inputFields.style.display = "block";
+            paypalSubArea.style.display = "none";
+        } else {
+            inputFields.style.display = "none";
+            paypalSubArea.style.display = "block";
+        }
+    }
+
+        
+    </script>
+</body>
+</html>
